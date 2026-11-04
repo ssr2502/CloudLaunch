@@ -4,87 +4,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CloudLaunch | AWS Demo Website</title>
-
+    <meta name="description" content="CloudLaunch - Explore cloud computing, storage and security with AWS.">
+    <title>CloudLaunch | Explore the Cloud</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <h2>CloudLaunch</h2>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#" class="logo">Cloud<span>Launch</span></a>
 
         <nav>
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#about">About</a>
         </nav>
+
+        <a href="#services" class="nav-button">Explore Cloud</a>
     </header>
 
+    <!-- HERO SECTION -->
     <section class="hero" id="home">
-        <h1>Welcome to My First Cloud Website</h1>
+        <div class="hero-content">
+            <span class="tag">WELCOME TO THE CLOUD</span>
 
-        <p>
-            Learning AWS, Cloud Computing and Web Hosting
-            through a simple website project.
-        </p>
+            <h1>
+                Launch Your Ideas
+                <span>Into The Cloud.</span>
+            </h1>
 
-        <button onclick="showMessage()">Explore Project</button>
+            <p>
+                Discover the power of cloud computing with AWS.
+                Explore scalable infrastructure, secure storage
+                and intelligent cloud solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#services" class="primary-button">
+                    Explore Services →
+                </a>
+
+                <a href="#about" class="secondary-button">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="glow-circle"></div>
+            <div class="cloud-card">
+                <div class="cloud-icon">☁</div>
+                <h3>Cloud Computing</h3>
+                <p>Build. Deploy. Scale.</p>
+                <div class="status">
+                    <span></span> Cloud Ready
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="services" id="services">
-        <h2>AWS Services Overview</h2>
+    <!-- SERVICES SECTION -->
+    <section class="services section" id="services">
+        <div class="section-heading">
+            <span class="tag">OUR SERVICES</span>
+            <h2>Explore Cloud <span>Solutions</span></h2>
+            <p>
+                Discover essential AWS services that power
+                modern cloud infrastructure.
+            </p>
+        </div>
 
-        <div class="cards">
+        <div class="service-grid">
 
-            <div class="card">
+            <!-- EC2 CARD -->
+            <article class="service-card">
+                <div class="service-icon blue">☁</div>
+                <span class="card-number">01 / COMPUTE</span>
+
                 <h3>Amazon EC2</h3>
-                <p>
-                    EC2 provides virtual servers in the cloud
-                    to run applications and websites.
-                </p>
-            </div>
 
-            <div class="card">
+                <p>
+                    Virtual servers in the cloud that help
+                    applications run with flexible computing
+                    capacity.
+                </p>
+
+                <a href="https://aws.amazon.com/ec2/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Explore EC2 ↗
+                </a>
+            </article>
+
+            <!-- S3 CARD -->
+            <article class="service-card featured">
+                <div class="service-icon purple">▤</div>
+                <span class="card-number">02 / STORAGE</span>
+
                 <h3>Amazon S3</h3>
-                <p>
-                    S3 is an object storage service used
-                    to store files and data.
-                </p>
-            </div>
 
-            <div class="card">
-                <h3>AWS IAM</h3>
                 <p>
-                    IAM helps manage users, roles,
-                    permissions and access securely.
+                    Store and protect your data with scalable,
+                    secure and reliable cloud object storage.
                 </p>
-            </div>
+
+                <a href="https://aws.amazon.com/s3/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Explore S3 ↗
+                </a>
+            </article>
+
+            <!-- IAM CARD -->
+            <article class="service-card">
+                <div class="service-icon cyan">♙</div>
+                <span class="card-number">03 / SECURITY</span>
+
+                <h3>AWS IAM</h3>
+
+                <p>
+                    Manage users, roles and permissions to
+                    control access to AWS resources securely.
+                </p>
+
+                <a href="https://aws.amazon.com/iam/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Explore IAM ↗
+                </a>
+            </article>
 
         </div>
     </section>
 
-    <section class="about" id="about">
-        <h2>About This Project</h2>
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+        <div class="about-content">
+            <span class="tag">ABOUT CLOUDLAUNCH</span>
 
-        <p>
-            This is a beginner-friendly static website
-            created as part of my AWS and DevOps learning journey.
-            It demonstrates basic HTML, CSS and website design.
-        </p>
+            <h2>Building a Better <span>Cloud Future</span></h2>
+
+            <p>
+                CloudLaunch is a learning project created to
+                explore the fundamentals of cloud computing
+                and AWS services.
+            </p>
+
+            <p>
+                Our goal is to understand how cloud technologies
+                help businesses build, store and manage
+                applications efficiently.
+            </p>
+
+            <a href="https://aws.amazon.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="primary-button">
+                Discover AWS →
+            </a>
+        </div>
+
+        <div class="about-box">
+            <div class="about-symbol">✦</div>
+            <h3>Explore. Learn. Innovate.</h3>
+            <p>Your journey into cloud computing starts here.</p>
+        </div>
     </section>
 
-    <footer>
-        <p>CloudLaunch | AWS Learning Project</p>
-        <p>Created for educational purposes</p>
-    </footer>
+    <!-- CTA SECTION -->
+    <section class="cta">
+        <span class="tag">START YOUR JOURNEY</span>
+        <h2>Ready to Explore the Cloud?</h2>
+        <p>
+            Take your first step towards understanding
+            modern cloud technology.
+        </p>
 
-    <script>
-        function showMessage() {
-            alert("Welcome to my AWS Learning Project!");
-        }
-    </script>
+        <a href="#services" class="primary-button">
+            Get Started →
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#" class="logo">Cloud<span>Launch</span></a>
+
+        <p>
+            Exploring the possibilities of cloud computing.
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="https://github.com/ssr2502/CloudLaunch"
+               target="_blank"
+               rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 CloudLaunch. Created as a learning project.
+        </div>
+    </footer>
 
 </body>
 </html>
